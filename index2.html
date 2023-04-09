@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css2/style2.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header id="header">
+        <div class="header-e">
+            <div class="bola-cinza">
+                <img src="img/folha.png" alt="">
+                    <div class="bola-branca">
+                        <i class='bx bx-align-left'></i>
+                    </div>
+            </div>
+            <i class='bx bx-search'></i>
+            <input type="text"  
+            name="x"
+            id="x"
+            placeholder="Search User, Event and more...">
+        </div>
+
+        <div class="header-d">
+            <div class="ing">
+                <p>English</p>
+                <i class='bx bx-chevron-down' ></i>
+            </div>
+            <i class='bx bx-cog' ></i>
+            <div class="sino">
+                <i class='bx bx-bell' ></i>
+                <div class="notificacao">1</div>
+            </div> 
+            <div class="foto">
+            <img src="/img/usuario.png" alt="">
+        </div>
+        </div>
+    
+    </header>
+
+    <nav id="nav">
+        <div class="nav-esquerda">
+            <div class="botão-back">
+                <i class='bx bx-chevron-left' ></i>
+                <p>Back</p>
+            </div>
+            <div class="nav-link">
+                <a href="#">Home / </a>
+                <a href="#">Apps / </a>
+                <a href="#">File Manager / </a>
+            </div>
+        </div>
+        <div class="nav-direita">
+            <a href="#"><i class='bx bx-import' ></i>Import</a>
+            <a href="#"><i class='bx bx-export' ></i>Export</a>
+            <a href="#">Category<i class='bx bx-chevron-down' ></i></a>
+        </div>
+    </nav>
+
+    <main>
+        <aside id="aside">
+            <div class="nav-bar">
+                <i class='bx bx-home'></i>
+                <i class='bx bx-building'></i>
+                <i class='bx bx-hourglass' ></i>
+                <i class='bx bx-envelope' ></i>
+                <i class='bx bx-notepad'></i>
+                <i class='bx bx-calendar'></i>
+                <i class='bx bx-chat'></i>
+                <div class="notificacao-chat">2</div>
+                <i class='bx bx-cog' ></i>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="aside-nav-bar">
+                <img src="img/usuario.png" alt="">
+                <div class="bola-verde"></div>
+                <h5>Natalie<h5>
+            </div>
+        </aside>
+
+        <!--barrinha do meio-->
+        <section id="section">
+            <h4>File Menager</h4>
+                <div class="menu-branco">
+                    <div class="opcoes">
+                        <a href="#"><i class='bx bx-home-alt' ></i>Home</a>
+                        <a href="#"><i class='bx bx-file-blank'></i>Files</a>
+                        <a href="#"><i class='bx bx-star'></i>Starred</a>
+                        <a href="#"><i class='bx bx-shape-circle' ></i>Shared</a>
+                        <a href="#"><i class='bx bx-archive' ></i>Recent</a> 
+                        <a href="#"><i class='bx bx-trash'></i>Recovery</a>
+                        <a href="#"><i class='bx bx-cog' ></i>Settings</a>
+                        <a href="#"><i class='bx bxs-file-archive'></i>Zip Files</a>
+                    </div>
+                    <div class="notificacao-rosa">12</div>
+                    <div class="botoes-menu-branco">
+                        <a href="#">Upload</a>
+                        <a href="#">Create</a>
+                    </div> 
+                    <div class="pontilhado">------------------------</div>
+                    <img src="img/pessoa-arquivo.jpeg" alt="">
+                    <div class="botoes-inferior-menu">
+                        <a href="#"><i class='bx bx-library'></i>Storage</a>
+                        <a href="#">Upgrade</a>
+                    </div>
+                    <p> 08.25 GB of 20 GB used</p>
+                </div>
+            <div class="personal-plan"> 
+                <h5>Personal Plan</h5>
+                <p>Only you</p>
+                <a href="#">Upgrade Plan - See Datails</a>
+                <i class='bx bx-expand-vertical'></i>
+            </div>
+
+        </section>
+
+        <!--barrinha principal-->
+        <section id="section2">
+            <a href="#">Create New Folder</a>
+            <div class="type-folders">
+                <div class="quadrado">
+                    <div class="folder">
+                        <div class="circle">
+                         <i class='bx bx-images' ></i>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <h5>Images</h5>
+                </div>
+                <div class="quadrado">
+                    <div class="folder" id="doc">
+                        <div class="circle">
+                            <i class='bx bxs-file-blank'></i>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <h5>Documents</h5>
+                </div>
+                <div class="quadrado">
+                    <div class="folder" id="vid">
+                        <div class="circle">
+                            <i class='bx bxs-videos'></i>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <h5>Videos</h5>
+                </div>
+                <div class="quadrado">
+                    <div class="folder" id="pdf">
+                        <div class="circle">
+                            <i class='bx bxs-file-doc'></i>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <h5>PDF Files</h5>
+                </div>
+                <div class="quadrado">
+                    <div class="folder"  id="music">
+                        <div class="circle">
+                            <i class='bx bx-music'></i>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <h5>Audio</h5>
+                </div>
+            </div>
+            <div class="recent-folder">
+                <div class="recent-folder-esquerdo">
+                    <h4>Recent Folder</h4>
+                </div>
+                <div class="recent-folder-direito">
+                    <p>Recent<p>
+                    <i class='bx bx-chevron-down' ></i>
+                    <div class="quadradinho1">
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-folder-area">
+                <div class="pastas" id="folder1">
+                    <i class='bx bxs-folder-open'></i>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <h5>Project Details</h5>
+                    <p>250MB | 5 members  | Team Plan</p>
+                    <h6>12 files</h6>
+                </div>
+
+                <div class="pastas" id="folder2">
+                    <i class='bx bxs-folder-open'></i>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <h5>Client Meeting</h5>
+                    <p>100MB | 2 members  | Team Plan</p>
+                    <h6>5 files</h6>
+                </div>
+
+                <div class="pastas" id="folder3">
+                    <i class='bx bxs-folder-open'></i>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <h5>Payment</h5>
+                    <p>188MB | 6 members  | Team Plan</p>
+                    <h6>12 files</h6>
+                </div>
+
+            </div>
+
+
+            <div class="files">
+                <div class="files-esquerdo">
+                    <h4>Files</h4>
+                </div>
+                <div class="files-direito">
+                    <p>All Files<p>
+                    <i class='bx bx-chevron-down' ></i>
+                    <div class="quadradinho1">
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="files-area">
+                <div class="pastas" id="pasta1">
+                    <i class='bx bx-table'></i>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <i class='bx bxs-star' ></i>
+                    <h5>Project Quotation.xlsx</h5>
+                    <p>20 Aug | 5 members  | 2 MB</p>
+                </div>
+
+                <div class="pastas" id="pasta2">
+                    <i class='bx bxs-file-archive'></i>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <i class='bx bxs-star' ></i>
+                    <h5>Project Details.Zip</h5>
+                    <p>20 Aug | 3 members  | 3 MB</p>
+                </div>
+
+                <div class="pastas" id="pasta3">
+                    <i class='bx bxl-adobe'></i>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                    <i class='bx bxs-star' ></i>
+                    <h5>Banners.ai</h5>
+                    <p>20 Aug | 4 members  | 25 MB</p> 
+                </div>
+
+            </div>
+
+            <div class="pessoas">
+                <div class="titulos">  
+                    <div class="check-box"><i class='bx bx-check-square'></i></div>
+                    <div class="name">NAME</div>
+                    <div class="createdby">CREATED BY</div>
+                    <div class="size">SIZE</div>
+                    <div class="created">CREATED</div>
+                    <div class="last">LAST MODIFIED</div>
+                    <div class="action">ACTION</div>
+                </div>
+                <p>---------------------------------------------------------------------------------------------------</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

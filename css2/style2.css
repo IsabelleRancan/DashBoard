@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+}
+
+#header{
+    /* border: .4rem solid red;  */
+    display: flex;
+    width: 100%;
+    height: 3rem;
+
+}
+
+/* . é pra class, # pra id e vazio é pra vermelho */
+
+#header .header-e {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+#header .header-e .bx-search{
+    margin-left: 2.5rem;
+    margin-right: 0.3rem;
+    font-size: 1.7rem; /*vai aumentar o tamanho da lupa*/
+    color: grey;
+}
+
+#header .header-e input{
+    border: none;
+    outline: none; /*sem borda qundo tá clicando tbm*/
+    width: 15rem;
+}
+
+#header .header-e .bola-cinza{
+    display: flex;
+    border-top-right-radius: 2rem; /*ponta redonda em cima*/
+    border-bottom-right-radius: 2rem; /*ponta redonda em baixo*/
+    background: #DEDEDE;
+    align-items: center;
+    height: 3rem;
+    width: 4rem;
+    position: relative; /*vsi deixar a bola branca no relative*/
+} 
+
+#header .header-e .bola-cinza img{
+    width: 2.5rem;
+    margin-left: .3rem;
+}
+
+#header .header-e .bola-cinza .bola-branca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%; /*bolinha*/
+    position: absolute;
+    left: 3rem;    box-shadow: .2rem .2rem .3rem gray;
+}
+
+#header .header-d {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end; /*pros itens ficarem alinhados no fim da linha*/
+}
+
+#header .header-d i{
+    font-size: 1.7rem;
+}
+
+#header .header-d .ing{
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+#header .header-d img{
+    width: 2.5rem;
+    margin-right: .3rem;
+}
+
+#header .header-d .sino{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+#header .header-d .sino .notificacao{
+    position: absolute;
+    display: flex;
+    top: 5px; /*arrumando a altura da notificação*/
+    right: 8px; /*arrumando o lado que a notificação vai ficar*/
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px; /*tamanho do número*/
+}
+
+#nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0eeee;
+}
+
+#nav .nav-esquerda{
+    display: flex;
+    justify-content: space-between; /*separou o link do back*/
+    width: 330px; /*definido a quantidade de espaço entre eles*/
+    align-items: center; /*centralizar tudo*/
+
+}
+
+#nav .nav-esquerda .nav-link a{
+    text-decoration: none; /*tirou o sublinhado*/
+    color: #b8b2b2;
+}
+
+#nav .nav-esquerda .nav-link a:hover{
+    color: black; /*efeito hover preto quando passa o mouse por cima*/
+}
+
+
+#nav .nav-esquerda .nav-link a:nth-child(3){
+    color: black; /*vai mexer só na cor do 3° LINK*/
+}
+
+#nav .nav-esquerda .botão-back{
+    display: flex;
+    align-items: center;
+}
+
+#nav .nav-direita{
+    display: flex;
+    gap: 10px; /*espaço entre os elementos*/ 
+}
+
+#nav .nav-direita a{
+    display: flex;
+    justify-content: center;
+    gap: 5px;/*tamanho entre icone e texto*/
+    align-items: center;
+    padding: 5px; /*tamanho do botão*/
+    color: white; /*vai deixar td branco*/
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+#nav .nav-direita a:nth-child(1){
+    background-color: purple;
+
+}
+
+#nav .nav-direita a:nth-child(2){
+    background-color: pink;
+
+}
+
+#nav .nav-direita a:nth-child(3){
+    background-color: #b8b2b2;
+    color: rgb(73, 73, 73);
+
+}
+
+#nav .nav-direita a:hover{
+    opacity: 90%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0eeee;
+}
+
+#aside{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /*vai separar os itens em coluna*/
+    width: 5%;
+    height: calc(100vh - 7.8rem);
+}
+
+#aside .nav-bar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;    
+    height: 450px;
+    background-color: blueviolet;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#aside .nav-bar i{
+    padding: 3px; /*espaço entre os elementos*/
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 1.4rem; /*vai aumentar o tamanho dos elementos*/
+    color: white;
+
+}
+
+#aside .nav-bar .notificacao-chat{
+    display: flex;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    color: white;
+    font-size: 10px;
+    top: 306px;
+    left: 33px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+#aside .aside-nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 10px;
+}
+
+#aside .aside-nav-bar img{
+    position: relative;
+    width: 2.3rem;
+    margin-bottom: 5px; /*separando o nome da imagem do usuário*/
+}
+
+#aside .aside-nav-bar .bola-verde{
+    position: absolute;
+    bottom: 25px;
+    left: 198px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid white;
+}
+
+#section{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 20%;
+}
+
+#section .menu-branco{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 430px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: .2rem .2rem .5rem gray;
+}
+
+#section .menu-branco .opcoes a{
+    display: flex;
+    position: relative;
+    width: 225px;
+    height: 24px;
+    /*background-color: purple;*/
+    margin-top: 7px; /*distancia entre cada linha*/
+    margin-left: 10px; 
+    padding: 3px; /*tamanho do botão*/
+    align-items: center; /*vai deixat o texto no meio do ícone*/
+    justify-content: left; /*alinhando os ícones*/
+    gap: 7px; /*distancia entre icone e texto*/
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+#section .menu-branco .opcoes i{
+    font-size: 18px; /*tamanho ícone*/
+}
+
+#section .opcoes a:hover{
+    color: purple;
+    opacity: 90%;
+}   
+
+#section .menu-branco .notificacao-rosa{
+    display: flex;
+    position: absolute;
+    margin-top: 133px;
+    margin-left: 215px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(220, 63, 89);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+#section .menu-branco .botoes-menu-branco{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#section .menu-branco .botoes-menu-branco a{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid blueviolet;   
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+#section .menu-branco .botoes-menu-branco a:nth-child(1){
+    background-color: blueviolet;
+}
+
+#section .menu-branco .botoes-menu-branco a:nth-child(2){
+    color: blueviolet;
+}
+
+#section .menu-branco .pontilhado{
+    display: flex;
+    position: relative;
+    color: #b8b2b2;
+    justify-content: center;
+    margin-top: 8px; /*distancia entre o pontilhado e os botões*/
+}
+
+#section .menu-branco img{
+    display: flex;
+    position: relative;
+    width: 8rem;
+}
+
+#section .menu-branco .botoes-inferior-menu{
+    display: flex;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 150px;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+#section .menu-branco .botoes-inferior-menu a{
+    display: flex;
+    margin: 4px;
+    align-items: center;
+    justify-content: end; /*alinhando os dois link a direita*/
+}
+
+
+#section .menu-branco .botoes-inferior-menu a:nth-child(1){
+    padding: 4px;
+    background-color: #dfd9d9;
+    text-decoration: none;
+    color: black;
+
+}
+
+#section .menu-branco p{
+    display: flex;
+    margin-left: 15px;
+    color: #b8b2b2;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#section .personal-plan{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    height: 6rem;
+    border-radius: 10px;
+    background-color: rgb(98, 0, 128);
+    padding: 10px;
+    color: white;
+}
+
+#section .personal-plan p{
+    font-size: 11px;
+}
+
+#section .personal-plan a{
+    display: flex;
+    position: absolute;
+    margin-top: 60px;
+    color: rgb(255, 187, 0);
+    font-size: 13px;
+}
+
+#section .personal-plan i{
+    display: flex;
+    position: relative;
+    margin-left: 210px;
+    margin-top: -35px;
+}
+
+#section2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 71.6%;
+    height: calc(100vh - 7.8rem);
+}
+
+#section2 a{
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+
+#section2 .type-folders{
+    display: flex;
+    height: 120px;
+    width: 870px;
+    margin-top: 20px;
+    justify-content: space-between; /*tá espaçando os quadradinhos*/
+}
+
+#section2 .type-folders .quadrado{
+    display: flex;
+    flex-direction:column; 
+    height: 120px;
+    width: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 .type-folders .quadrado .folder{
+    display: flex; 
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+#section2 .type-folders .quadrado .folder i:nth-child(2){
+    display: flex;
+    position: absolute;
+    margin-left: 130px;
+    margin-bottom: 75px;
+}
+
+#section2 .type-folders .quadrado .folder i:nth-child(3){
+    display: flex;
+    position: absolute;
+    margin-right: 130px;
+    margin-top: 75px;
+    color:white;
+    font-size: 12px;
+}
+
+#section2 .type-folders .quadrado .folder .circle{
+    display: flex;
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: palevioletred;
+    color: white;
+    font-size: 30px;
+}
+
+#section2 .type-folders .quadrado .folder#doc{
+    background-color: purple;
+}
+
+#section2 .type-folders .quadrado .folder#doc .circle{
+    background-color: rgb(168, 3, 168);
+}
+
+#section2 .type-folders .quadrado .folder#vid{
+    background-color: green;
+}
+
+#section2 .type-folders .quadrado .folder#vid .circle{
+    background-color: rgb(5, 169, 5);
+}
+
+#section2 .type-folders .quadrado .folder#pdf{
+    background-color:rgb(249, 249, 82);
+}
+
+#section2 .type-folders .quadrado .folder#pdf .circle{
+    background-color: rgb(252, 252, 130);
+}
+
+#section2 .type-folders .quadrado .folder#music{
+    background-color: rgb(47, 78, 235);
+}
+
+#section2 .type-folders .quadrado .folder#music .circle{
+    background-color: rgb(84, 100, 242);
+}
+
+
+#section2 .recent-folder{
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+}
+
+#section2 .recent-folder .recent-folder-esquerdo{
+    display: flex;
+    width: 450px;
+
+}
+
+
+#section2 .recent-folder .recent-folder-direito{
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    font-size: 15px;
+
+}
+
+#section2 .recent-folder .recent-folder-direito .quadradinho1{
+    display: flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 .recent-folder-area{
+    display: flex;
+    height: 100px;
+    width: 880px;
+    justify-content: space-between; /*tá espaçando os quadradinhos*/
+}
+
+#section2 .recent-folder-area .pastas{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: .2rem .2rem .5rem gray;
+    background-color: white;
+}
+
+#section2 .recent-folder-area .pastas i:nth-child(1){
+    display: flex;
+    position: absolute;
+    margin-left: 4px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    color: blueviolet;
+}
+
+#section2 .recent-folder-area .pastas i:nth-child(2){
+    display: flex;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 8px;
+}
+
+#section2 .recent-folder-area .pastas h5{
+    display: flex;
+    margin-top: 7px;
+    margin-left: 36px;
+
+}
+
+#section2 .recent-folder-area .pastas p{
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 11px;
+    color: gray;
+}
+
+#section2 .recent-folder-area .pastas h6{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+
+
+
+#section2 .files{
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+}
+
+#section2 .files .files-esquerdo{
+    display: flex;
+    width: 450px;
+
+}
+
+
+#section2 .files .files-direito{
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    font-size: 15px;
+
+}
+
+#section2 .files .files-direito .quadradinho1{
+    display: flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 .files-area{
+    display: flex;
+    height: 70px;
+    width: 880px;
+    justify-content: space-between; /*tá espaçando os quadradinhos*/
+}
+
+#section2 .files-area .pastas{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: .2rem .2rem .5rem gray;
+    background-color: white;
+}
+
+#section2 .files-area .pastas i:nth-child(1){
+    display: flex;
+    position: absolute;
+    margin-left: 4px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    color: blueviolet;
+}
+
+#section2 .files-area .pastas i:nth-child(2){
+    display: flex;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 8px;
+}
+
+#section2 .files-area .pastas i:nth-child(3){
+    display: flex;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 50px;
+    font-size: 10px;
+    color: #b8b2b2;
+}
+
+#section2 .files-area .pastas h5{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 36px;
+
+}
+
+#section2 .files-area .pastas p{
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 11px;
+    color: gray;
+}
+
+#section2 .files-area .pastas h6{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+#section2 .files-area .pastas#pasta1 .bx-table {
+    color: green;
+    margin-top: 4px;
+}
+
+#section2 .files-area .pastas#pasta2 .bxs-file-archive {
+    color: gray;
+    margin-top: 4px;
+}
+
+#section2 .files-area .pastas#pasta3 .bxl-adobe {
+    color: orangered;
+    margin-top: 4px;
+}
+
+#section2 .pessoas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 153px;
+    border-radius: 10px;
+    box-shadow: .2rem .2rem .5rem gray;
+    background-color: white;
+    justify-content: space-between;
+}
+
+#section2 .pessoas .titulos{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    height: 30px;
+    color: gray;
+    justify-content: space-around;
+}
+
+#section2 .pessoas div{
+    height: 35px;
+}
+
+#section2 .pessoas p{
+    color: gray;
+}
+
+
